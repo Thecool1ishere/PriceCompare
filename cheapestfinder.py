@@ -4,10 +4,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import quote_plus
-
+from selenium.webdriver.chrome.options import Options
 st.title("Product Price Comparison")
 
-driver = webdriver.Chrome()
+options = Options()
+
+
+options.add_argument("--headless=new")
+
+
+options.add_argument("--no-sandbox")
+
+
+options.add_argument("--disable-dev-shm-usage")
+
+
+driver = webdriver.Chrome(options=options)
+
 
 dict1 = {}
 
