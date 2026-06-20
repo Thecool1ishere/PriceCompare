@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import quote_plus
 from selenium.webdriver.chrome.options import Options
-st.title("Price Comparison")
+st.title("Price Comparison for all Electronic Products")
 
 options = Options()
 
